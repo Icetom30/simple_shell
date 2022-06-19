@@ -17,7 +17,7 @@ void add_key(vars_t *vars)
 	if (newenv == NULL)
 	{
 		print_error(vars, NULL);
-		vars-status = 127;
+		vars->status = 127;
 		new_exit(vars);
 	}
 	for (i = 0; vars->env[i] != NULL; i++)
